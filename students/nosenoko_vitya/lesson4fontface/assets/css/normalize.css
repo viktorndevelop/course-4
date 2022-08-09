@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(/assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(/assets/fonts/Gilroy-Bold.ttf);
+}
+
+
+/*
+li a:active {
+  color: #070707; 
+}
+ul li a:visited {
+  color: #070707;
+}
+*/
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+h2 {
+  font-size: 43px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 43px;
+  margin: 0px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

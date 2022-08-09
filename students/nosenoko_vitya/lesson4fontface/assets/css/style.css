@@ -1,0 +1,244 @@
+/* body */
+body {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* container */
+.container {
+    max-width: 936px;
+    height: max-content;
+    margin: 0 auto;
+}
+header {
+    max-width: 1100px;
+    height: max-content;
+    margin: 0 auto;
+}
+/*adaptive menu */
+    
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .nav-menu a {
+        float: right;
+        display: block;
+        margin: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* navigation */
+nav {
+    width: 100%;
+    height: max-content;
+    padding: 15px 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li {
+    width: auto;
+    list-style-type: none;
+    display: inline-block;
+    box-sizing: content-box;
+    text-align: justify;
+}
+.menu li a {
+    width: auto;
+    padding: 5px 70px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: #828282;
+    text-align: center;
+
+}
+/* section Denis Novik */
+.denis-novik {
+    margin: 15px auto;
+    align-items: center;
+    justify-content: center;
+}
+.denis-novik>div {
+    width: 33%;
+    display: inline-block;
+    align-items: center;
+}
+
+.denis-novik>div:last-child {
+    width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+}
+.dn {
+    text-align: left;
+}
+
+.uxui {
+    text-align: center;
+}
+.rueng {
+    width: auto;
+    height: 20px;
+    transform: rotate(-90deg) translateY(145px) translateX(150px);
+    text-align: left;
+}
+span.ru-color {
+    color: #828282;  
+}
+/* Denis Novi @media*/
+@media screen and (max-width: 477px) {
+    .denis-novik, .dn-img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 477px) {
+    .denis-img, .dnh-img {
+        display: none;
+    }
+}
+.denis-img {
+    margin: 15px auto;
+    text-align: center;
+    justify-content: center;
+}
+/* About Me */
+.about-me {
+    width: 100%;
+    height: max-content;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* skills */
+.skills {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 100px auto;
+   
+    display: inline-block;
+}
+
+/* icons */
+.section-icons {
+    width: auto;
+    display: inline-block;
+}
+.icons_block {
+    max-width: 100%;
+    display: inline-block;
+    margin: 10px 40px;
+}
+
+.s-icon {
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* icons star */
+.star {
+    color: rgb(27, 27, 27); /* Цвет текста */
+}
+.star::before {
+    display: inline-block;
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку */
+}
+.star::after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку */
+}
+.star::before  {
+    content: url("../images/icons/star_black_24dp.svg");
+}
+
+.star_last {
+    color: rgb(27, 27, 27); /* Цвет текста */
+    opacity: 0.2;
+}
+.star_last::before {
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку */
+}
+.star_last::after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку */
+}
+.star_last::before  {
+    content: url("../images/icons/star_black_24dp.svg");
+}
+._none::after {
+    content: " text!";
+    color: red;
+    opacity: 0;
+}
+/* portfolio */ 
+.section-portfolio {
+    font-family: 'Gilroy-Medium';
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+/* section-homepages */
+.section-homepages {
+    align-items: center;
+    text-align: center;
+}
+.section-homepages h3 {
+    text-decoration: underline;
+
+}
+/* section end */
+ 
+/* footer */
+.footer {
+    max-width: 936px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.footer div img {
+    display: inline-block;
+    width: 40px;
+}
+.footer p:last-child {
+    /*font-family: 'Gilroy-Middle'; */
+    font-size: 14px;
+    color: #828282;
+    
+}
+footer>div>img {
+    padding: 10px 25px;
+}
+button {
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin: 25px 0px;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #070707;
+    color: #ffffff;
+    justify-content: center;
+}
+
