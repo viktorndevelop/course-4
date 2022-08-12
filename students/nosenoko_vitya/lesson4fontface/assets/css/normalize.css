@@ -1,21 +1,24 @@
 @font-face {
   font-family: Gilroy-Medium;
-  src: url(/assets/fonts/Gilroy-Medium.ttf);
+  src: url(../fonts/Gilroy-Medium.ttf);
+ 
 }
+
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(/assets/fonts/Gilroy-Bold.ttf);
+  src: url(../fonts/Gilroy-Bold.ttf);
 }
 
 
-/*
-li a:active {
-  color: #070707; 
+a.link {
+  color: #828282;
+ 
 }
-ul li a:visited {
+
+a:active {
   color: #070707;
 }
-*/
+
 
 /* Убираем внутренние отступы */
 ul[class],
@@ -30,15 +33,17 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
+h1 {
+  font-size: 47px;
+  line-height: 48px;
+  font-family: Gilroy-Bold;
+}
 h2 {
-  font-size: 43px;
-  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  font-family: Gilroy-Bold;
 }
 
-h4 {
-  font-size: 43px;
-  margin: 0px;
-}
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],

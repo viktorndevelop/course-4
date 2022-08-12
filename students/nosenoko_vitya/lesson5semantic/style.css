@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    width: 100%;
+    height: max-content;
+    padding: 100px 0px;
+}
+nav {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+}
+nav ul li {
+    display: block;
+    list-style-type: none;
+    padding: 5px;
+}
+ul {
+    margin-left: 0; 
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    font-weight: 900;
+}
+h2 { font-weight: 700;}
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+    text-align: justify;
+}
+span.dujka::before {
+    content: "<";
+}
+span.dujka:after {
+    content: ">";
+}
+.container>img {
+    margin-left: 15px;
+}
